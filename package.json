@@ -1,0 +1,19 @@
+{
+  "name": "your-first-agent",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "step0": "node --env-file=.env steps/0-hello-llm.ts",
+    "step1": "node --env-file=.env steps/1-first-tool.ts",
+    "step2": "node --env-file=.env steps/2-loop.ts",
+    "agent": "node --env-file=.env steps/3-your-agent.ts",
+    "typecheck": "tsc -p ."
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "^7.0.2"
+  }
+}
